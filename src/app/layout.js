@@ -1,13 +1,20 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Archivo,
+  Inter,
+  Quicksand,
+  DM_Sans,
+  IBM_Plex_Mono,
+} from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const archivo = Archivo({
   subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const dm = DM_Sans({
   subsets: ["latin"],
 });
 
@@ -19,10 +26,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={` dark`}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

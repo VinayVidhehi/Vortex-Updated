@@ -2,20 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Everyday Sans Web";
+  src: url("/fonts/EverydaySans-Regular-Web.woff2") format("woff2"),
+    url("/fonts/EverydaySans-Regular-Web.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Archivo_Expand";
+  src: url("/fonts/Archivo_SemiExpanded-Bold.ttf") format("ttf");
+}
+
+* {
+  font-family: "Archivo";
+}
+
+.esw {
+  font-family: "Everyday Sans Web";
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: "Everyday Sans Web";
+  font-weight: 100;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fffefb;
+  --foreground: #111;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #111;
+    --foreground: #eee;
+    --muted: 223 47% 11%;
+    --muted-foreground: 214, 3%, 54%;
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
