@@ -5,7 +5,7 @@ import { HiArrowLongRight } from "react-icons/hi2";
 export default function Home() {
   return (
     <>
-      <main className="flex items-end justify-center min-h-screen pt-28 md:py-0 md:h-screen overflow-hidden  bg-[url(/images/bg.jpg)] bg-cover bg-center">
+      <main className="flex items-end justify-center min-h-screen pt-28 md:py-0 md:h-screen overflow-hidden  bg-background bg-cover bg-center">
         <div className="w-11/12 md:w-10/12 flex flex-col md:flex-row-reverse gap-16 justify-evenly items-start h-full relative">
           <div className="w-full md:w-1/2 flex flex-col gap-5 h-fit md:h-full justify-center">
             <h1 className="font-bold text-4xl md:text-5xl uppercase">

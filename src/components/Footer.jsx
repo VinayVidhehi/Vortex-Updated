@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="flex items-center justify-center py-10 md:py-20 bg-zinc-950">
+    <div className="text-white flex items-center justify-center py-10 md:py-20 bg-zinc-950">
       <div className="flex flex-col w-11/12 md:w-10/12 gap-12">
         <div className="flex flex-col gap-4 md:gap-0 md:items-center md:flex-row">
           <div className="w-1/2 flex gap-3">
@@ -20,7 +20,7 @@ const Footer = () => {
             />
             <h2 className="font-bold text-4xl md:text-6xl">VORTEX</h2>
           </div>
-          <div className="text-base md:text-lg tracking-wide flex flex-col md:flex-row md:items-center gap-1.5">
+          <div className="text-base md:text-2xl tracking-wide flex flex-col md:flex-row md:items-center gap-1.5">
             <h3>“ QUIT LOSING, ACT WISELY ”.</h3>
             <p>LET VORTEX DO THE WORK.</p>
           </div>

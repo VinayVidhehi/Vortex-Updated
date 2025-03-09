@@ -121,9 +121,9 @@ const Header = () => {
               <Link href={"/"} className="text-sm esw">
                 Home
               </Link>
-              <Link href={"/work"} className="text-sm esw">
+              {/* <Link href={"/work"} className="text-sm esw">
                 Explore
-              </Link>
+              </Link> */}
               <Link href={"/services"} className="text-sm esw">
                 Services
               </Link>
@@ -168,12 +168,12 @@ const Header = () => {
           >
             Home
           </Link>
-          <Link
+          {/* <Link
             href={"/work"}
             className="border-b border-zinc-800 h-1/6 flex items-center"
           >
             Explore
-          </Link>
+          </Link> */}
           <Link
             href={"/services"}
             className="border-b border-zinc-800 h-1/6 flex items-center"
